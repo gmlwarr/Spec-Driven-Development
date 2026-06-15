@@ -1,4 +1,4 @@
-# TaskApp — Contexto do Projeto
+# TaskApp — Contexto do Projeto de tarefas
 
 ## Stack
 - Kotlin + Jetpack Compose (Material3)
