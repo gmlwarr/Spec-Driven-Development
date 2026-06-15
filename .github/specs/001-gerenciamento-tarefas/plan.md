@@ -1,4 +1,4 @@
-# Design — Gerenciamento de Tarefas (exemplo)
+# Plan — Gerenciamento de Tarefas (exemplo)
 
 ## Modelo de dados (Room)
 

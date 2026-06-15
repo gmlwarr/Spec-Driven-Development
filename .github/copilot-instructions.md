@@ -1,8 +1,8 @@
-# <NOME_DO_PROJETO> — Contexto do Projeto
+# <NOME_DO_PROJETO> — Instruções para o GitHub Copilot
 
-> Lido automaticamente pelo Claude Code no início de toda sessão.
-> Mantenha enxuto (idealmente < 200 linhas) e específico do projeto.
-> Fluxo completo de specs: `.claude/specs/INDEX.md`.
+> Lido automaticamente pelo Copilot Chat/Agent em todas as conversas
+> deste workspace. Mantenha enxuto e específico. Fluxo completo de
+> specs: `.github/specs/INDEX.md`.
 
 ## Stack
 - Kotlin + Jetpack Compose (Material3)
@@ -36,13 +36,12 @@ app/src/main/java/<pacote>/
 - ViewModels expõem `StateFlow<UiState>` (sealed class: Loading/Success/Error/Empty)
 - Sem lógica de negócio em Composables — apenas estado e eventos
 - DAO retorna `Flow<List<T>>` para consultas observáveis
-- Toda nova feature segue o fluxo em `.claude/specs/` antes de codar
+- Toda nova feature segue o fluxo em `.github/specs/` antes de codar
 - Commits pequenos, em português, formato: `feat(<escopo>): <descrição>`
 
 ## Specs
-Toda funcionalidade nova é especificada em `.claude/specs/<numero>-<nome>/`
-(requirements.md, design.md, tasks.md) antes da implementação.
-Veja `.claude/specs/INDEX.md`. Use a skill `/nova-spec` para criar uma
-nova spec a partir do template em `.claude/specs/_template/`.
-Nunca implemente uma tarefa sem antes ler requirements.md e design.md
-correspondentes.
+Toda funcionalidade nova é especificada em `.github/specs/<numero>-<nome>/`
+(spec.md, plan.md, tasks.md) antes da implementação. Veja
+`.github/specs/INDEX.md`. Use o prompt `/nova-spec` para criar uma nova
+spec a partir de `.github/specs/_template/`. Nunca implemente uma tarefa
+sem antes ler spec.md e plan.md correspondentes.

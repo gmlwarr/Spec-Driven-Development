@@ -1,4 +1,4 @@
-# Requirements — Gerenciamento de Tarefas (exemplo)
+# Spec — Gerenciamento de Tarefas (exemplo)
 
 ## Visão Geral
 O usuário deve conseguir criar, visualizar, editar, concluir e excluir
