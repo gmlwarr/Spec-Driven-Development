@@ -1,0 +1,113 @@
+{
+  "_readme": "Arquivo gerenciado pelo agente. Edite SOMENTE o campo 'completed'. NÃO remova, renomeie ou reordene entradas. Adicione novas tasks no final de cada spec_id.",
+  "specs": [
+    {
+      "spec_id": "001",
+      "spec_name": "Gerenciamento de Tarefas",
+      "tasks": [
+        {
+          "id": "001/T1",
+          "description": "Configurar dependências (Room, Hilt, Nav Compose, kotlinx-datetime)",
+          "requirements": [],
+          "completed": false
+        },
+        {
+          "id": "001/T2",
+          "description": "Criar TaskPriority (enum) e TaskEntity (Room)",
+          "requirements": ["R1"],
+          "completed": false
+        },
+        {
+          "id": "001/T3",
+          "description": "Criar Converters (TypeConverters para enum/LocalDate/Instant)",
+          "requirements": [],
+          "completed": false
+        },
+        {
+          "id": "001/T4",
+          "description": "Criar TaskDao com queries do design.md",
+          "requirements": ["R2", "R3"],
+          "completed": false
+        },
+        {
+          "id": "001/T5",
+          "description": "Criar AppDatabase (RoomDatabase abstrata)",
+          "requirements": [],
+          "completed": false
+        },
+        {
+          "id": "001/T6",
+          "description": "Criar modelo de domínio Task + mapeamento Entity<->Domain",
+          "requirements": [],
+          "completed": false
+        },
+        {
+          "id": "001/T7",
+          "description": "Criar TaskRepository (interface) e TaskRepositoryImpl",
+          "requirements": [],
+          "completed": false
+        },
+        {
+          "id": "001/T8",
+          "description": "Criar módulos Hilt (DatabaseModule, RepositoryModule)",
+          "requirements": [],
+          "completed": false
+        },
+        {
+          "id": "001/T9",
+          "description": "Testes de DAO com Room in-memory",
+          "requirements": ["R2"],
+          "completed": false
+        },
+        {
+          "id": "001/T10",
+          "description": "Criar TaskListUiState + TaskListViewModel",
+          "requirements": ["R2", "R3"],
+          "completed": false
+        },
+        {
+          "id": "001/T11",
+          "description": "Criar TaskListScreen (Compose) com estado vazio",
+          "requirements": ["R2"],
+          "completed": false
+        },
+        {
+          "id": "001/T12",
+          "description": "Criar TaskFormUiState + TaskFormViewModel (criar/editar)",
+          "requirements": ["R1", "R4"],
+          "completed": false
+        },
+        {
+          "id": "001/T13",
+          "description": "Criar TaskFormScreen (Compose) com validação de título",
+          "requirements": ["R1"],
+          "completed": false
+        },
+        {
+          "id": "001/T14",
+          "description": "Implementar exclusão com confirmação",
+          "requirements": ["R5"],
+          "completed": false
+        },
+        {
+          "id": "001/T15",
+          "description": "Configurar NavHost ligando as duas telas",
+          "requirements": [],
+          "completed": false
+        },
+        {
+          "id": "001/T16",
+          "description": "Testes de ViewModel (TaskList e TaskForm) com Turbine",
+          "requirements": ["R1", "R2", "R3", "R4"],
+          "completed": false
+        },
+        {
+          "id": "001/T17",
+          "description": "Validação manual: checar cada critério de aceite do requirements.md",
+          "requirements": ["R1", "R2", "R3", "R4", "R5"],
+          "completed": false
+        }
+      ]
+    }
+  ]
+}

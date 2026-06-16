@@ -39,10 +39,16 @@ app/src/main/java/<pacote>/
 - Toda nova feature segue o fluxo em `.claude/specs/` antes de codar
 - Commits pequenos, em português, formato: `feat(<escopo>): <descrição>`
 
+## Harness — Regras invioláveis
+- SEMPRE comece uma nova sessão com `/iniciar-sessao` antes de tocar em código
+- NUNCA marque `"completed": true` no feature_list.json sem build + testes passando
+- NUNCA remova ou reordene entradas do feature_list.json
+- SEMPRE adicione uma entrada ao claude-progress.md ao encerrar uma sessão
+- Trabalhe em UMA tarefa por vez; não inicie a próxima sem confirmação
+- Se build ou testes quebrarem: pare tudo e corrija antes de continuar
+
+
 ## Specs
-Toda funcionalidade nova é especificada em `.claude/specs/<numero>-<nome>/`
-(requirements.md, design.md, tasks.md) antes da implementação.
-Veja `.claude/specs/INDEX.md`. Use a skill `/nova-spec` para criar uma
-nova spec a partir do template em `.claude/specs/_template/`.
-Nunca implemente uma tarefa sem antes ler requirements.md e design.md
-correspondentes.
+Toda nova feature → `.claude/specs/<numero>-<nome>/` (requirements, design, tasks)
++ entrada correspondente adicionada ao `.claude/harness/feature_list.json`.
+  Use `/nova-spec` para criar. Veja `.claude/specs/INDEX.md` para status geral.
