@@ -27,23 +27,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.6546980951419967" />
-      <entry key="MS500" value="3.5360470157491597" />
-      <entry key="S2" value="4.551698672268191" />
-      <entry key="S5" value="4.8127484334798725" />
-      <entry key="S10" value="4.905607339623765" />
-      <entry key="S30" value="5.6332165430557435" />
-      <entry key="S60" value="9.59808969497274" />
-      <entry key="M2" value="19.176632604535296" />
-      <entry key="M5" value="36.45196695194244" />
-      <entry key="M10" value="56.16971281380278" />
-      <entry key="M15" value="79.93550877425783" />
-      <entry key="M30" value="146.39257889262336" />
-      <entry key="H1" value="220.63069679039762" />
-      <entry key="H2" value="277.5079702110131" />
-      <entry key="H4" value="312.91153563249924" />
-      <entry key="D1" value="346.7187721347413" />
-      <entry key="W1" value="352.94867692221806" />
+      <entry key="MS100" value="1.771062255446331" />
+      <entry key="MS500" value="3.545186766065389" />
+      <entry key="S2" value="4.546459259298397" />
+      <entry key="S5" value="5.02649029897001" />
+      <entry key="S10" value="5.946692183228036" />
+      <entry key="S30" value="8.411518617152566" />
+      <entry key="S60" value="12.626097824027545" />
+      <entry key="M2" value="27.059254122163598" />
+      <entry key="M5" value="79.41043872658759" />
+      <entry key="M10" value="136.90380184263492" />
+      <entry key="M15" value="177.460100057148" />
+      <entry key="M30" value="265.51200622370186" />
+      <entry key="H1" value="359.6203413168708" />
+      <entry key="H2" value="433.20119741137916" />
+      <entry key="H4" value="479.9035155601848" />
+      <entry key="D1" value="525.1666377286467" />
+      <entry key="W1" value="533.5783335851957" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -65,23 +65,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.616641414319841" />
-      <entry key="MS500" value="3.5186663189977025" />
-      <entry key="S2" value="4.546040651787405" />
-      <entry key="S5" value="4.810350086327583" />
-      <entry key="S10" value="4.904375754529494" />
-      <entry key="S30" value="5.630445126175153" />
-      <entry key="S60" value="9.59124176013604" />
-      <entry key="M2" value="19.16826552090196" />
-      <entry key="M5" value="36.445989622868424" />
-      <entry key="M10" value="56.16582243226922" />
-      <entry key="M15" value="79.93239627875995" />
-      <entry key="M30" value="146.3903708779866" />
-      <entry key="H1" value="220.62924276246727" />
-      <entry key="H2" value="277.5071109499572" />
-      <entry key="H4" value="312.9110650912632" />
-      <entry key="D1" value="346.71868722309557" />
-      <entry key="W1" value="352.9486646214874" />
+      <entry key="MS100" value="1.7303818796022903" />
+      <entry key="MS500" value="3.5173010324527274" />
+      <entry key="S2" value="4.535577804660359" />
+      <entry key="S5" value="5.021577211166511" />
+      <entry key="S10" value="5.943936773450478" />
+      <entry key="S30" value="8.409897779919662" />
+      <entry key="S60" value="12.623288205408407" />
+      <entry key="M2" value="27.055074512527533" />
+      <entry key="M5" value="79.40519863022863" />
+      <entry key="M10" value="136.89906766077357" />
+      <entry key="M15" value="177.45597889621894" />
+      <entry key="M30" value="265.50898412498543" />
+      <entry key="H1" value="359.6183505689904" />
+      <entry key="H2" value="433.2000202829347" />
+      <entry key="H4" value="479.9028701289759" />
+      <entry key="D1" value="525.1665210462103" />
+      <entry key="W1" value="533.5783166754026" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -106,7 +106,7 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/glaysonlima/IdeaProjects/SpecDrivenDevelopment",
+    "last_opened_file_path": "/Users/glaysonlima/IdeaProjects/SpecDrivenDevelopment/.github/prompts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -119,9 +119,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.github/prompts" />
+      <recent name="$PROJECT_DIR$/.github" />
       <recent name="$PROJECT_DIR$/.claude/skills" />
-      <recent name="$PROJECT_DIR$/.claude/specs/001-gerenciamento-tarefas" />
+      <recent name="$PROJECT_DIR$/.claude" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -145,6 +147,7 @@
       <updated>1781492468639</updated>
       <workItem from="1781492469657" duration="4193000" />
       <workItem from="1781496817934" duration="575000" />
+      <workItem from="1781574806666" duration="1047000" />
     </task>
     <servers />
   </component>

@@ -4,4 +4,4 @@
 |-----|--------------------------------------|---------------------|
 | 001 | Gerenciamento de Tarefas (exemplo)    | Concluído (exemplo) |
 
-> Status possíveis: Em especificação · Em plan · Em implementação · Concluído
+> Status: Em especificação · Em plan · Em implementação · Concluído

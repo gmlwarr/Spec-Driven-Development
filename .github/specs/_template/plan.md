@@ -1,25 +1,19 @@
 # Plan — <Nome da Feature>
 
 > Decisões técnicas baseadas em spec.md e em
-> `.github/copilot-instructions.md`. Referencie os IDs de requisitos
-> (R1, R2...) onde fizer sentido.
+> `.github/copilot-instructions.md`. Referencie Rx onde fizer sentido.
 
 ## Modelo de dados (Room)
-
 ### <NomeEntity>
-| Campo | Tipo               | Observações |
-|-------|--------------------|-------------|
-| id    | Long (PK, autogen) |             |
+| Campo | Tipo | Observações |
+|---|---|---|
+| id | Long (PK, autogen) | |
 
 ### <Nome>Dao
 - `observeAll(): Flow<List<...>>`
 - `getById(id: Long): ...?`
 - `insert(...): Long`
-- `update(...)`
-- `delete(...)`
-
-### AppDatabase
-- Converters necessários: <...>
+- `update(...)`, `delete(...)`
 
 ## Repository
 ```kotlin
@@ -32,18 +26,16 @@ interface <Nome>Repository {
 ```
 
 ## Presentation
-
 ### <Nome>ViewModel
 - Expõe `StateFlow<...UiState>` (sealed class)
-- Eventos: <onClick, onSave, onDelete, ...>
+- Eventos: <onClick, onSave, onDelete...>
 
 ### Navegação
 - Rotas: <...>
 
 ## Módulos Hilt
-- `DatabaseModule`: <...>
-- `RepositoryModule`: <...>
+- `DatabaseModule`, `RepositoryModule`
 
 ## Testes previstos
 - DAO: Room in-memory
-- ViewModel: Turbine + repositório fake
+- ViewModel: Turbine + fake repository

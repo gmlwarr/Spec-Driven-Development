@@ -1,8 +1,7 @@
-# <NOME_DO_PROJETO> — Instruções para o GitHub Copilot
+# <NOME_DO_PROJETO> — Instruções para o Copilot CLI
 
-> Lido automaticamente pelo Copilot Chat/Agent em todas as conversas
-> deste workspace. Mantenha enxuto e específico. Fluxo completo de
-> specs: `.github/specs/INDEX.md`.
+> Carregado automaticamente em toda sessão do Copilot CLI neste repositório.
+> Mantenha enxuto. Fluxo completo de specs: `.github/specs/INDEX.md`.
 
 ## Stack
 - Kotlin + Jetpack Compose (Material3)
@@ -19,11 +18,11 @@ app/src/main/java/<pacote>/
 ├── data/
 │   ├── local/        (Entity, Dao, AppDatabase, Converters)
 │   └── repository/   (Repository + Impl)
-├── domain/            (modelos de domínio, use cases se necessário)
+├── domain/
 ├── presentation/
-│   ├── <feature>/     (ViewModel, UiState, Screen)
+│   ├── <feature>/    (ViewModel, UiState, Screen)
 │   └── navigation/
-└── di/                (módulos Hilt)
+└── di/
 ```
 
 ## Comandos
@@ -36,12 +35,18 @@ app/src/main/java/<pacote>/
 - ViewModels expõem `StateFlow<UiState>` (sealed class: Loading/Success/Error/Empty)
 - Sem lógica de negócio em Composables — apenas estado e eventos
 - DAO retorna `Flow<List<T>>` para consultas observáveis
-- Toda nova feature segue o fluxo em `.github/specs/` antes de codar
-- Commits pequenos, em português, formato: `feat(<escopo>): <descrição>`
+- Commits pequenos, em português: `feat(<escopo>): <descrição>`
+
+## Harness — Regras invioláveis
+- SEMPRE comece com `/iniciar-sessao` antes de escrever qualquer código
+- NUNCA marque `"completed": true` em `.claude/harness/feature_list.json`
+  sem build + testes passando
+- NUNCA remova ou reordene entradas do `feature_list.json`
+- SEMPRE adicione entrada em `.claude/harness/claude-progress.md` ao encerrar
+- Trabalhe em UMA tarefa por vez; não inicie a próxima sem confirmação
+- Se build ou testes quebrarem: pare tudo e corrija antes de continuar
 
 ## Specs
-Toda funcionalidade nova é especificada em `.github/specs/<numero>-<nome>/`
-(spec.md, plan.md, tasks.md) antes da implementação. Veja
-`.github/specs/INDEX.md`. Use o prompt `/nova-spec` para criar uma nova
-spec a partir de `.github/specs/_template/`. Nunca implemente uma tarefa
-sem antes ler spec.md e plan.md correspondentes.
+Toda nova feature → `.github/specs/<numero>-<nome>/` (spec.md, plan.md, tasks.md)
++ entrada correspondente no `.claude/harness/feature_list.json`.
+Use `/nova-spec` para criar. Veja `.github/specs/INDEX.md` para status.
